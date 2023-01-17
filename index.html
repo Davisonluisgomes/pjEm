@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Landingg</title>
+   <!--  -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+crossorigin=""/>
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+crossorigin=""></script>
+  <!-- Fonte -->
+
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script> </head>
+<!-- icons boots -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+<body>
+    <header>
+        <div class="container" id="nav-container">
+          <!-- add essa class -->
+          <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <a class="navbar-brand" href="index.html">
+              <img id="logo" src="img/dsa.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" id="home-menu" href="#">Home</span></a>
+                <a class="nav-item nav-link" id="about-menu" href="#">About</a>
+                <a class="nav-item nav-link" id="services-menu" href="#">Serviços</a>
+                <a class="nav-item nav-link" id="team-menu" href="#">Time</a>
+                <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
+                <a class="nav-item nav-link" id="portfolio-menu" href="#">localização</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- slider -->
+      <div class="container-fluid">
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+              <li data-target="#mainSlider" data-slide-to="1"></li>
+              <li data-target="#mainSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/4.jpeg" class="d-block w-100" alt="Projetos de e-commerce">
+    
+                <!-- tirar classe d-none -->
+    
+                <div class="carousel-caption d-md-block">
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/1.jpg" class="d-block w-100" alt="Engenharia de software">
+                <div class="carousel-caption d-md-block">
+                
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/4.jpeg" class="d-block w-100" alt="Manutenção em software">
+                <div class="carousel-caption d-md-block">
+                 
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+      </div>
+
+<!-- freatu -->
+<div class="pb-6 bg-light" id="freature">
+<div class="container pt-4 pb-1"> 
+<h2 class="frimary-color">Helio da silva</h2>
+<p class="secondary-colum">estamos dispostos a ajudar voce cliente!!</p>
+</div>
+<div class="container">
+  <div class="col-12">
+    <div class=" row">
+      <div class="col-5 py-4">
+<p class="box-1 col-12  pb-4 ">
+  Roberto da silva Advogados Associados é um escritório jurídico, com sede em Manaus-AM, especializado 
+  na pres tação de serviços de advocacia e 
+  consultoria jurídica de forma si ngular e personalizada nas áreas de direito criminal e cível.
+Sua equipe é composta por profissionais de sólida formação acadêmic a e alta qualificação,
+ reconhecidos pela vasta experiência e atuação eficiente nos âmbitos contencioso e consultivo em diversas 
+ matérias do direito.
+Com atuação firme, pautada na ética e na independência profissional, o escritório preza pela 
+seriedade e comprometimento com as necessidad es e os desafios de seus clientes. Acompanha com zelo as 
+peculiaridades de cada faseRoberto da silva Advogados Associados é um escritório jurídico, com sede em Manaus-AM, especializado 
+na pres tação de serviços de advocacia e
+
+
+</p>
+</div>
+<div class="col-7">
+  
+  <img src="img/proj1.jpg" >
+
+</div>
+</div>
+  </div>
+</div> 
+</div>
+
+      <!-- about area-->
+<div  id="about-area">
+        <div class="container">
+            <div class="row">
+              
+                <div class="col-12">
+            <img class="cast" src="img/title_image.png" >
+          
+        </div>
+        <div class="rotp ">
+        <h1>About us!!</h1>
+      </div>
+
+
+          <div class="col-md-6">
+            <img src="img/masm.jpg" class="img-fluid">
+          </div>  
+          <div class="col-md-6">
+            <h3 class="about-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                b est minima blanditiis! Ullam nulla perspiciatis vero animi optio,
+                 in deserunt similique repudiandae deleniti. Atque saepe ea est itaque quis harum.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                b est minima blanditiis! Ullam nulla perspiciatis vero animi optio,
+                 in deserunt similique repudiandae deleniti. Atque saepe ea est itaque quis harum.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                 b est minima blanditiis! Ullam nulla perspiciatis vero animi optio,
+                  in deserunt similique repudiandae deleniti. Atque saepe ea est itaque quis harum.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                 b est minima blanditiis!
+           
+                </h3>
+          </div>
+
+</div>
+</div>
+</div>
+
+ <!-- largec -->
+ <div id="call-action">
+  <div class="container text-white">
+   <div class="row">
+    <p>Venha ate nosso escritorio e faça-nos uma visita!!</p>
+    <button class="main-btn" href="#" id="call-btn">Contato</button>
+    </div>
+    </div>
+    </div>
+    
+
+    
+   
+
+<!-- COLBS /// MODAL -->
+<div id="team-area">
+    <div class="container tl">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="main-title">Nosso time</h3>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/profile1.jpg" class="card-img-top" alt="Imagem de Perfil 1">
+            <div class="card-body">
+            
+              <button id="open-modal">open</button>
+                      <div id="fade" class="hide"></div>
+                      <div id="modal" class="hide">
+                      <div id="header-modal">
+                          <h2>fechando modal</h2>
+                    <button id="close-modal"> close</button>
+                              </div>
+                  <div id="modal-body">
+                    
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident, neque at, iure illo dolores 
+                          voluptatem numquam rerum qui vitae mollitia quae nisi consequuntur labore. Ab aspernatur ratione id earum.</p>
+                        
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet provident, neque at, iure illo dolores 
+                           voluptatem numquam rerum qui vitae mollitia quae nisi consequuntur labore. Ab aspernatur ratione id earum.</p>
+                            
+            </div>    
+          </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/profile2.jpg" class="card-img-top" alt="Imagem de Perfil 2">
+            <div class="card-body">
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/profile2.jpg" class="card-img-top" alt="Imagem de Perfil 2">
+            <div class="card-body">
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/profile2.jpg" class="card-img-top" alt="Imagem de Perfil 2">
+            <div class="card-body">
+             
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- newws-->
+<footer>
+  <div class="bg-light" id="contact-area">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="main-title">Entre em contato conosco</h3>
+          </div>
+          <div class="col-md-4 box-about">
+            <i class="fas fa-phone"></i>
+            <p><span class="contact-tile">Ligue para:</span> (48)99999-9999</p>
+            <p><span class="contact-title">Horários:</span> 8:00 - 19:00</p>
+          </div>
+          <div class="col-md-4 box-about">
+            <i class="fas fa-envelope"></i>
+            <p><span class="contact-title">Envie um email:</span> contato@hdcagency.com.br</p>
+          </div>
+          <div class="col-md-4 box-about">
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span class="contact-title">Venha tomar um café:</span> Rua Lorem Ipsum - 1314</p>
+          </div>
+          <div class="col-md-6" id="msg-box">
+            <p>Ou nos deixe uma mensagem:</p>
+          </div>
+
+    <div id="contact-form" class="col-md-6">
+      <form action="https://api.staticforms.xyz/submit" method="POST">
+          <input type="hidden" name="accessKey" value="c4817f78-65d6-4328-a6fb-a6db76ededd5">
+          <input type="hidden" name="redirectTo" value="http://127.0.0.1:5502/index.html">
+
+          <input type="text" class="form-control" placeholder="E-mail" name="email">
+          <input type="text" class="form-control" placeholder="Assunto" name="subject">
+          <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+          <input type="submit" class="main-btn">
+
+
+</form>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</footer>
+
+ <!-- map -->
+  <section class="container-fluid ">
+    <div class="row justify-content-center">
+    <h4></h4>
+    <div class="col-md-12" id="mapId"></div>
+</div>
+
+</section>
+
+<!-- direct -->
+<div id="cop">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 
+      <p>todos os direitos reservados:<span> OTTTO</span></p>
+    </div>
+    </div>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

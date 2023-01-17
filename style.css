@@ -1,0 +1,400 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* nav */
+header, .navbar {
+    background-color: #000000;
+   
+    }
+  
+  #nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  
+  }
+  
+  #logo {
+    width: 12rem;
+    
+  }
+  
+  .navbar-brand {
+    padding: 0;
+    color: #FFF;
+  }
+  
+  .navbar-brand:hover {
+    color: #FFF;
+  }
+  
+  #navbar-links a {
+    color: #FFF;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 2rem .5rem;
+  }
+  /* slider */
+  .container-fluid {
+    padding: 0;
+  }
+  
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+  }
+  
+  #mainSlider .carousel-caption {
+    top: 30%;
+  }
+  
+  #mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
+  #mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #FFF;
+  }
+  
+  .main-btn {
+    background-color: #ffffff;
+    color: rgb(7, 7, 7);
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+ 
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+  }
+  
+  .main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #fdfdfd;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #000000;
+  }
+
+  /*freatures  */
+#freature{
+  margin-bottom: 3em;
+  padding: 5rem;
+
+}
+.frimary-color{
+  font-size: 1.75em;
+  margin-bottom: 1.4em;
+  position: relative;
+  font-family:  cursive;
+text-transform: uppercase;
+  
+}
+.frimary-color::before{
+
+  width: 85px;
+   border-top: 4px solid rgb(11, 2, 34);
+   content: ' ';
+   position: absolute;
+   bottom: 2em;
+}
+.secondary-colum{
+  font-size: 20px;
+  margin-bottom: 1.3rem;
+  color: rgb(116, 114, 114);
+
+ 
+}
+.box-1 {
+font-display: initial;
+ font-size: 20px;
+}
+
+
+
+#freature img{
+  width: 45rem;
+  display: flex;
+  padding-left: 25%;
+  margin: 0 15% 0;
+  
+}
+
+
+  /* about aarea */
+
+#about-area img{
+    margin-top: 55px;
+    margin-bottom: 5rem;
+    
+   
+}
+.img-fluid{
+
+  width: 60rem;
+  height: 52rem;
+}
+
+.cast{
+
+    margin: 0  35rem 0;
+width: 30px;
+ 
+}
+
+.about-title{
+
+font-family: 'Times New Roman', Times, serif;
+padding-top: 5rem;
+letter-spacing: 4px;
+
+}
+.rotp{
+
+  padding-left: 35rem;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* colab */
+#team-area{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+ 
+}
+.card-body{
+
+    text-align: center;
+}
+.main-title{
+  color: #000000;
+  margin: 0 0 75px 0;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.main-title::after{
+content: "";
+border-top: 2px solid rgb(53, 53, 53);
+width:  20%;
+position: absolute;
+top: 60px;
+left: 40.0%;
+
+}
+
+/* largec */
+#call-action{
+background-color: rgb(0, 0, 0);
+text-transform: uppercase;
+
+}
+#call-action .container{
+ padding: 15px 100px;
+}
+  
+#call-action .row{
+display: block;
+text-align: center;
+
+}
+#call-action .container p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+/* modal */
+
+.hide, #modal{
+
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+button{
+  padding: 0.6rem 1.2rem;
+  background-color: #888;
+  color: #fff;
+  border: none;
+  border-radius: 0.90rem;
+  opacity: 0.9;
+  font-size: 1rem;
+  transition: 0.4s;
+}
+#open-modal{
+background-color: #007bff;
+}
+button:hover{
+  opacity: 1;
+}
+#fade{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0, 0, 0.6);
+  z-index: 5;
+}
+#modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  background-color: #fff;
+  z-index: 10;
+  width: 500px;
+  max-width: 90%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+#header-modal{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #ccc;
+margin-bottom: 1rem;
+padding-bottom: 1rem;
+
+}
+#modal-body p{
+  margin-bottom: 1rem;
+}
+#modal.hide, #fade.hide{
+  opacity: 0;
+  pointer-events: none;
+}
+#modal.hide{
+  left: 0;
+}
+/* MODAL CARD-2 */
+.maod-lg{
+
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition:  visibility 0s , opacity 0.5s;
+}
+
+.bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+.mold{
+position: relative;
+  background-color: #fff;
+  width: 40%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-btn{
+
+  background-color: #007bff;
+}
+.close-modal{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+}
+
+
+/* newws */
+
+#contact-area {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.box-about{
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #000000;
+}
+
+.box-about i {
+  color: #444;
+  border: solid 1px #444;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.box-about p {
+  font-size: 16px;
+}
+
+.contact-title {
+  font-weight: bold;
+  color: #04003b;
+ 
+}
+
+#msg-box p {
+  font-size: 22px;
+}
+
+#contact-form input[type="text"], #contact-form textarea {
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+#contact-form .main-btn {
+  width: 100px;
+  height: 50px;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+#contact-form .main-btn:hover {
+  color: #ffffff;
+}
+/* direct */
+
+#cop .container{
+margin-top: 1rem;
+  padding: 5px 0;
+}
+#cop p{
+  text-transform: uppercase;
+  text-align: center;
+}
+#cop span{
+  font-size: 22px;
+  background-color: #e7fcff;
+  color: #000000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+letter-spacing: 3px;
+}
+
+/* map */
+#mapId{
+
+  width: 500%;
+  height: 600px;
+}
